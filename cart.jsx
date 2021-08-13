@@ -109,7 +109,7 @@ const Products = (props) => {
     if (item[0].instock == 0) return;
     item[0].instock = item[0].instock - 1;
     setCart([...cart, ...item]);
-    //doFetch(query);
+    doFetch(query);
   };
 
   const deleteCartItem = (index) => {
